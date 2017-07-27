@@ -1,0 +1,50 @@
+sci,Lab Diagnostic Tests,Fischbach,1992
+sci,Organic Pollutants,C.H.Walker,2009
+sci,Forensic Psychiatry,Henry A.Davidson,1952
+sci,Sexual Murder,Louis B.Schlensinger,2003
+sci,No Boundaries,Leffall,2005
+sci,My Breast,Joyce Wadler,1992
+sci,Parkinson's Disease,Ebadi Pfeiffer,2005
+sci,Hans Krebs,Frederic Lawrence Holmes,1991
+sci,Cytochrome P450,Ortiz de Montellano,2005
+sci,Clostridium Difficile,Adam P.Roberts,2016
+norst,The Wall,Christopher Hilton,2001
+norst,Imperial White,Radhika Mohanram,2007
+norst,Beyond Khartoum,Randall Fegley,2011
+norst,Women Whoe Kill,Ann Jones,1996
+norst,On Their Own,Shirk & Stangler,2004
+norst,The Underclass,Ken Auletta,1999
+norst,Stay Close,Libby Cataldi,2009
+norst,Drug Abuse,Glantz Hartel,1999
+norst,Mending The World,Rosemarie Robotham,2003
+norst,Carnal Reading,Joseph Pappa,2011
+asia,Modern Japanese Diaries,Donald Keene,1995
+asia,Japanese Drama,Lombard,1929
+asia,Two Homelands,Toyoko Yamasaki,2008
+asia,The Bamboo Broom,Harold Gould Henderson,1934
+asia,The Face of Another,Kobo Abe,2003
+asia,The Concept of Raja,S.C.Pande,1999
+asia,Mapping Taiwanese,Warren A.Brewer,2008
+asia,My Story, Kamala Das,1977
+asia,Shanghai Literary Imaginings,Lena Scheen,2015
+asia,Traditional Chinese Folktales,Yin-lien C.Chin,1989
+art,de Kooning,Mark Stevens,2004
+art,Joseph Cornell,Jodi Hauptman,1999
+art,The Courage to Be Alone,Lorand Hegyi,2004
+art,Art for All,Beth Irwin Lewis,2003
+art,Alla Prima,Richard Schmid,1998
+art,Artful Lives,Beth Gates Warren,2011
+art,400 Photographs,Ansel Adams,2007
+art,Monster Art,Zilia Papp,2010
+art,Painting In Britain,Margaret Rickert,1954
+art,California Impression,William H.Gerdts,1998
+nordv,Gentlemen Of Fortune,N/A,2001
+nordv,The Cosby Show,N/A,2007
+nordv,Lover Other,N/A,2009
+nordv,Ghost Story,N/A,2004
+nordv,Horato Hornblower,N/A,1999
+nordv,Creature from Black Lagoon,N/A,2000
+nordv,Zatoichi the Doom Man,N/A,2003
+nordv,Riod Das Mortes,N/A,2002
+nordv,Rocket Gibraltar,N/A,2003
+nordv,The Searchers,N/A,2006
