@@ -6,7 +6,7 @@ Final Project CSCI-2270
 
 Summary:
 Idea: The program use in a library with directions for folks to get to different stacks and self-checkout.
-Method (Data Struct): The map will be a weighted undirected graph with 5 vertices (represent 5 different stacks in the library). And each vertices is a root of a binary search tree
+Method (Data Struct): The map will be a weighted undirected graph with 6 vertices (represent 6 different stacks in the library). And each vertices is a root of a binary search tree
 ---Menu----
 1. Search for book // check book status using title
 2. Check-in book 

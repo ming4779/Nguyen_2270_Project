@@ -48,3 +48,8 @@ nordv,Zatoichi the Doom Man,N/A,2003
 nordv,Riod Das Mortes,N/A,2002
 nordv,Rocket Gibraltar,N/A,2003
 nordv,The Searchers,N/A,2006
+juv,Step Aside Pops,Kate Beaton,2015
+juv,The Complete Peanuts,Charles M. Schulz,2004
+juv,Pathfinder,Laeta & Christopher,2006
+juv,Inkstuds,Robin Mconnell,2010
+juv,LeChat du Rabbin,Joann Sfar,2012

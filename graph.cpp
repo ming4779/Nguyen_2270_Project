@@ -107,7 +107,7 @@ void Graph::BFS(string title){
    }
 }
 
-void Graph::dijkstra(string start, string last){
+void Graph::shortestPath(string start, string last){
     vertex *solvedV;
 
     for(int i=0; i<vertices.size(); i++){
@@ -269,6 +269,7 @@ void Graph::buildMap(){
     addVertex("art");
     addVertex("asia");
     addVertex("nordv");
+    addVertex("juv");
     addEdge("norst","sci", 30);
     addEdge("sci","norst", 30);
     addEdge("norst","art", 70);
@@ -279,6 +280,10 @@ void Graph::buildMap(){
     addEdge("art","asia", 50);
     addEdge("art","nordv", 20);
     addEdge("nordv","art", 20);
+    addEdge("juv","norst",20);
+    addEdge("norst","juv",20);
+    addEdge("juv","art",60);
+    addEdge("art","juv",60);
 }
 
 void Graph::buildTree(){
@@ -403,7 +408,7 @@ void Graph::printBook(string stackN){
 
 void Graph::shortestDist(string found){
     if(checkVertex(found)==true){
-    dijkstra(startLoca,found);
+    shortestPath(startLoca,found);
     }
     else{
         cout<<"You enter wrong code"<<endl;
@@ -436,6 +441,9 @@ string Graph::convert(string a){
     }
     if(a =="asia"){
         name = "Asia Stack";
+    }
+    if(a =="juv"){
+        name = "Juvenile Stack";
     }
     return name;
 

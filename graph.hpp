@@ -66,7 +66,7 @@ class Graph
         vector<vertex> vertices =vector<vertex >(0) ;
         void addEdge(string v1, string v2, int weight);
         void addVertex(string name);
-        void dijkstra(string, string);
+        void shortestPath(string, string);
         vertex searchVer(string);
         int searchIndex(string);
         //Tree

@@ -32,6 +32,7 @@ int main()
     cout<<"asia----Asia stack"<<endl;
     cout<<"art-----Art stack"<<endl;
     cout<<"nordv---DVD stack"<<endl;
+    cout<<"juv-----Juvenile stack"<<endl;
     cin>>c;
     g.getCode(c);
 /////main menu
@@ -79,6 +80,7 @@ int main()
             cout<<"asia----Asia stack"<<endl;
             cout<<"art-----Art stack"<<endl;
             cout<<"nordv---DVD stack"<<endl;
+            cout<<"juv-----Juvenile stack"<<endl;
             cin>>wordin;
             g.shortestDist(wordin);
             break;
@@ -93,6 +95,7 @@ int main()
             cout<<"asia----Asia stack"<<endl;
             cout<<"art-----Art stack"<<endl;
             cout<<"nordv---DVD stack"<<endl;
+            cout<<"juv-----Juvenile stack"<<endl;
             cin>>c;
             g.getCode(c);
             break;
@@ -113,6 +116,7 @@ int main()
             cout<<"asia----Asia stack"<<endl;
             cout<<"art-----Art stack"<<endl;
             cout<<"nordv---DVD stack"<<endl;
+            cout<<"juv-----Juvenile stack"<<endl;
             cin>>wordin;
             g.printBook(wordin);
             }
@@ -126,6 +130,7 @@ int main()
             cout<<"asia----Asia stack"<<endl;
             cout<<"art-----Art stack"<<endl;
             cout<<"nordv---DVD stack"<<endl;
+            cout<<"juv-----Juvenile stack"<<endl;
             cin>>c;
             g.shelfLevel(c);
             }
