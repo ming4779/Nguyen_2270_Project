@@ -103,36 +103,51 @@ int main()
             int temp;
             cout<<"=======Option======="<<endl;
             cout<<"1. Print out book in stack"<<endl;
-            cout<<"2. Get shelf's level in stack"<<endl;
+            cout<<"2. Get max shelf's level in stack"<<endl;
+            cout<<"3. Find shelf's level for book"<<endl;
+            cout<<"4. Which stacks are closest to each other?"<<endl;
+            cout<<"5. Which stacks are farthest to each other?"<<endl;
             cin.ignore();
             cin>>temp;
             if(temp == 1){
-            cin.ignore();
-            cout<<"Stack you want to print book from"<<endl;
-            cout<<"Code----Location"<<endl;
-            cout<<""<<endl;
-            cout<<"norst---Main stack"<<endl;
-            cout<<"sci-----Science stack"<<endl;
-            cout<<"asia----Asia stack"<<endl;
-            cout<<"art-----Art stack"<<endl;
-            cout<<"nordv---DVD stack"<<endl;
-            cout<<"juv-----Juvenile stack"<<endl;
-            cin>>wordin;
-            g.printBook(wordin);
+                cin.ignore();
+                cout<<"Stack you want to print book from"<<endl;
+                cout<<"Code----Location"<<endl;
+                cout<<""<<endl;
+                cout<<"norst---Main stack"<<endl;
+                cout<<"sci-----Science stack"<<endl;
+                cout<<"asia----Asia stack"<<endl;
+                cout<<"art-----Art stack"<<endl;
+                cout<<"nordv---DVD stack"<<endl;
+                cout<<"juv-----Juvenile stack"<<endl;
+                cin>>wordin;
+                g.printBook(wordin);
             }
             else if(temp == 2){
-            cout<<"Stack you want to know shelf's level"<<endl;
-            cout<<"    ***************     "<<endl;
-            cout<<"Code----Location"<<endl;
-            cout<<""<<endl;
-            cout<<"norst---Main stack"<<endl;
-            cout<<"sci-----Science stack"<<endl;
-            cout<<"asia----Asia stack"<<endl;
-            cout<<"art-----Art stack"<<endl;
-            cout<<"nordv---DVD stack"<<endl;
-            cout<<"juv-----Juvenile stack"<<endl;
-            cin>>c;
-            g.shelfLevel(c);
+                cout<<"Stack you want to know shelf's level"<<endl;
+                cout<<"    ***************     "<<endl;
+                cout<<"Code----Location"<<endl;
+                cout<<""<<endl;
+                cout<<"norst---Main stack"<<endl;
+                cout<<"sci-----Science stack"<<endl;
+                cout<<"asia----Asia stack"<<endl;
+                cout<<"art-----Art stack"<<endl;
+                cout<<"nordv---DVD stack"<<endl;
+                cout<<"juv-----Juvenile stack"<<endl;
+                cin>>c;
+                g.shelfLevel(c);
+            }
+            else if(temp == 3){
+                cout<<"Enter book name"<<endl;
+                cin.ignore();
+                getline(cin,wordin);
+                g.searchlevel(wordin);
+            }
+            else if(temp == 4){
+                g.closestStack();
+            }
+            else if(temp == 5){
+                g.farStack();
             }
             break;
         case 8:

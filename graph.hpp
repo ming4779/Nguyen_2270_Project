@@ -58,6 +58,9 @@ class Graph
         void shortestDist(string);
         void printBook(string);
         void shelfLevel(string);
+        void searchlevel(string);
+        void closestStack();
+        void farStack();
 
     protected:
     private:
@@ -76,6 +79,7 @@ class Graph
         void insertBook(int, Node *node);
         void traversePrint(Node *currentNode);
         void level(Node *node);
+        void findLevel(Node *node,string);
         //Convert code to name
         string convert(string);
 

@@ -244,6 +244,20 @@ void Graph::level(Node *node){
         }
 
 }
+
+void Graph::findLevel(Node *node,string a){
+        count++;
+        if(node->title == a){
+            maxi = count;
+        }
+        if(node->left != nullptr){
+            findLevel(node->left,a);
+        }
+        if(node->right != nullptr){
+            findLevel(node->right,a);
+        }
+
+}
 //Print book
 
 void Graph::traversePrint(Node *currentNode){
@@ -424,6 +438,78 @@ void Graph::shelfLevel(string a){
 
 }
 
+void Graph::searchlevel(string a){
+    int lv;
+    string n;
+    for(int i=0;i<vertices.size();i++){
+        count =0;
+        maxi=0;
+        findLevel(vertices[i].treeRoot,a);
+        if(maxi != 0){
+            n = vertices[i].name;
+            lv = maxi;
+        }
+    }
+    cout<<"The book "<<a<<" is in "<<convert(n)<<" at level "<<lv<<endl;
+}
+
+void Graph::closestStack(){
+    maxi = 0;
+    bool a = false;
+    string f;
+    string l;
+    while(!a){
+        maxi = INT_MAX;
+        for(int i =0;i<vertices.size();i++){
+          for(int k=0;k<vertices[i].adj.size();i++){
+            if(vertices[i].adj[k].weight < maxi){
+                maxi = vertices[i].adj[k].weight;
+            }
+          }
+        }
+        for(int i =0;i<vertices.size();i++){
+          for(int k=0;k<vertices[i].adj.size();i++){
+            if(vertices[i].adj[k].weight == maxi){
+                f = vertices[i].name;
+                l = vertices[i].adj[k].v->name;
+                a = true;
+
+            }
+          }
+        }
+    }
+    cout<<convert(f)<<" and "<<convert(l)<<" are closest stacks."<<endl;
+
+}
+
+void Graph::farStack(){
+    maxi = 0;
+    bool a = false;
+    string f;
+    string l;
+    while(!a){
+        maxi = INT_MIN;
+        for(int i =0;i<vertices.size();i++){
+          for(int k=0;k<vertices[i].adj.size();i++){
+            if(vertices[i].adj[k].weight > maxi){
+                maxi = vertices[i].adj[k].weight;
+            }
+          }
+        }
+        for(int i =0;i<vertices.size();i++){
+          for(int k=0;k<vertices[i].adj.size();i++){
+            if(vertices[i].adj[k].weight == maxi){
+                f = vertices[i].name;
+                l = vertices[i].adj[k].v->name;
+                a = true;
+
+            }
+          }
+        }
+    }
+    cout<<convert(f)<<" and "<<convert(l)<<" are farthest stacks."<<endl;
+
+}
 //Convert function
 string Graph::convert(string a){
     string name;

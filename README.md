@@ -13,8 +13,8 @@ Method (Data Struct): The map will be a weighted undirected graph with 6 vertice
 3. Check-out book 
 4. Look at the map // print out vertices connection
 5. Shortest path to stack // Dijkstra Algorithm
-6. Print out book in stack
-7. Re-enter location // re-enter starting location
+6. Re-enter location // re-enter starting location
+7. More... //Many more sub_options to let user explore the library
 8. Quit
 
 User can use the program to access to library information in case they don't find anyone to help. User have option to self-checkout and self-checkin.
