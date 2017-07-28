@@ -47,7 +47,6 @@ class Graph
         bool checkVertex(string);
         void buildMap();
         void BFS(string);
-        void printVer();
         // Tree public function
         void buildTree();
         // Menu public function
@@ -58,6 +57,7 @@ class Graph
         void showMap();
         void shortestDist(string);
         void printBook(string);
+        void shelfLevel(string);
 
     protected:
     private:
@@ -70,10 +70,12 @@ class Graph
         vertex searchVer(string);
         int searchIndex(string);
         //Tree
-        Node *root;
+        int count;
+        int maxi;
         Node *binarySearch(Node *node, string);
-        void insertBook(Node *node);
+        void insertBook(int, Node *node);
         void traversePrint(Node *currentNode);
+        void level(Node *node);
         //Convert code to name
         string convert(string);
 

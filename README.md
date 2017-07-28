@@ -21,8 +21,11 @@ User can use the program to access to library information in case they don't fin
 User can use the program to find the shortest path to a stack or an overlook on the whole library stacks.
 
 How to run:
-I For the program to run, please download 3 files: graph.hpp project.cpp list_of_book.txt
-2. After download the program, if you using linux, compile in terminal and run it.
+1. For the program to run, please download 3 files: graph.hpp graph.cpp project.cpp list_of_book.txt
+2. To run the program:
+if you using linux, compile in terminal and run it.
+For example: $g++ -std=c++11 project.cpp   //to compile
+./a.out // to run
 if using third-party, open project.cpp compile and run.
 
 Dependencies:
@@ -33,3 +36,4 @@ Windows and Linux both work.
 
 Issues:
 When starting the program, if you type in the wrong code. It will return weird results in options in the main menu.
+You will get infinite loop if you enter anythings other than number when menu pop up.
